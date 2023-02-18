@@ -29,4 +29,3 @@ for char in array:
             test += char   
             if test == password:
             return "Wow awesome job you have cracked the challenge!"
-
