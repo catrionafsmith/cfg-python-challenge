@@ -1,7 +1,7 @@
 from list_chars import list_chars #function returns list of allowed characters
 
+# Decrypt one letter password
 def decrypt1(password):
-    # length 1
     num_cycle = 0
     test = ""
     for char in list_chars():
@@ -28,5 +28,3 @@ def decrypt2(password):
 
 mystery = r"%a"
 decrypt2(mystery)
-
-# Can we use recursion to call loops?

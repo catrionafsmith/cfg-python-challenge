@@ -1,0 +1,1 @@
+Challenge: use a brute force method to decrypt a password

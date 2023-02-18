@@ -11,5 +11,5 @@ def generate_random(length):
     password = "".join(password_chars)
     return password
 
-print(generate_random(7))
+# print(generate_random(7))
 
