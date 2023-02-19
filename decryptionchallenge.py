@@ -80,16 +80,14 @@ for let in array:
 #         if test == password:
 #         return "Wow awesome job you have cracked the challenge!"
 
-# # if password = "***"
-# # is this logic correct? I'm not sure if it should be test on line 28?
-# for char in array:
-#     test = char
-#     for char in array:
-#         test += char
-#         for char in array:
-#             test += char   
-#             if test == password:
-#             return "Wow awesome job you have cracked the challenge!"
-
-# def crackCode(password):
+# if password = "***"
+# is this logic correct? I'm not sure if it should be test on line 28?
+for char in array:
+    test = char
+    for char in array:
+        test += char
+        for char in array:
+            test += char   
+            if test == password:
+            return "Wow awesome job you have cracked the challenge!"
 
