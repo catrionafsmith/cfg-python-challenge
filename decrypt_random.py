@@ -3,7 +3,7 @@ Inspired by code from https://github.com/WeraGitHub/CFG/blob/main/Password_Crack
 '''
 
 import random
-from list_chars import list_chars
+from utils import list_chars
 
 def decrypt_random(password):
 
@@ -18,6 +18,7 @@ def decrypt_random(password):
 
     print("Success! The password is '{}'. {} cycles".format(password, num_cycle))
 
+# test for decrypt_random
 # mystery = '*!aA'
 # decrypt_random(mystery)
 

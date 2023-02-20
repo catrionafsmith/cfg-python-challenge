@@ -3,9 +3,7 @@
 # convert N to number with base equal to the length of set of allowed characters
 # this gives the indices that select allowed characters from list of base characgers
 # selected characters are joined and tested against mystery password
-from list_chars import list_chars
-from random_generate import generate_random
-from base_conversion import change_base
+from utils import list_chars, generate_random, change_base
 
 # list of allowed characters
 char_list = list_chars(lower=True, upper=False, numeric = True, special = False)
@@ -29,7 +27,7 @@ def decrypt(password, length):
     
 
 # generate random mystery password of length N
-mystery = generate_random(6)
+mystery = generate_random(3)
 print(mystery)
 decrypt(mystery, len(mystery))
 
