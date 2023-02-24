@@ -28,7 +28,6 @@ wordlist = readwordlist(url).decode('UTF-8')
 passwordlist = wordlist.split('\n')
 print(len(passwordlist))
 print(type(passwordlist))
-# print(passwordlist[:20])
 
 actual_password = 'Victoria'
 actual_password_hash = hash(actual_password)
