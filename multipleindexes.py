@@ -1,96 +1,19 @@
+#  Assumptions:
+# The length of the password is unknown
+# The characters include ASCII lowercase, uppercase, digits, special characters
+# We could create an array of all of the potential ASCII characters
+# Idea: have a variable within the loop that is switched to True when the password is matched, and this exits the for loop
+# Idea: if password is cracked then return True, and if not then increase count by 1, 
+# and the count is a measure of how many characters there are in the password, and how many nested for loops there are.
+# Does it have to be a function? Or could it just be a for loop?
+# Recursion!
+# Could we test a possible solution both ways round to try to speed up getting to the solution? i.e. use reverse
+
+
 array = ["a", "b", "c"]
 password = "cbacabaa"
 
 
-
-# for j in range(3):
-#     for i in range(len(array)):
-#         if array[i] == password:
-#             print(f"Yay it's {array[i]}")
-
-# test = ""
-# count = 0
-# for char in array:
-#     print(test +char)
-#     if test + char == password:
-#         print(f"Yes! {test}")
-# count +=1
-# test = array[0]
-# for char in array:
-#     print(test +char)
-#     if test + char== password:
-#         print(f"Yes! {test}")
-# count +=1
-# test = array[1]
-# for char in array:
-#     print(test +char)
-#     if test + char== password:
-#         print(f"Yes! {test}")
-# count += 1
-# test = array[2]
-# for char in array:
-#     print(test +char)
-#     if test + char== password:
-#         print(f"Yes! {test}")
-
-
-# def crackedFun():
-#     crackedit = False
-#     for x in range(1, 10):
-#         while crackedit == False:
-#             if x == 1:
-#                 for i in range(len(array)):
-#                     print(array[i])
-#                     if array[i] == password:
-#                         return print(f"Yes! {array[i]}")
-#                         crackedit = True
-#                         break
-#                 x += 1
-#             elif x == 2:
-#                 for j in range(len(array)):
-#                     for i in range(len(array)):
-#                         print(array[j]+array[i])
-#                         if array[j]+array[i] == password:
-#                             return print(f"Yes! {array[j]+array[i]}")
-#                             crackedit = True
-#                             break
-                        
-#                 x += 1
-#             elif x == 3:
-#                 for k in range(len(array)):
-#                     for j in range(len(array)):
-#                         for i in range(len(array)):
-#                             print(array[k]+array[j]+array[i])
-#                             if array[k]+array[j]+array[i] == password:
-#                                 return print(f"Yes! {array[k]+array[j]+array[i]}")
-#                                 crackedit = True
-#                                 break
-#                 x += 1
-#             elif x == 4:
-#                 for l in range(len(array)):
-#                     for k in range(len(array)):
-#                         for j in range(len(array)):
-#                             for i in range(len(array)):
-#                                 print(array[l]+array[k]+array[j]+array[i])
-#                                 if array[l]+array[k]+array[j]+array[i] == password:
-#                                     print(f"Yes! {array[l]+array[k]+array[j]+array[i]}")
-#                                     crackedit = True
-#                                     break
-#             elif x == 4:
-#                 for m in range(len(array)):
-#                     for l in range(len(array)):
-#                         for k in range(len(array)):
-#                             for j in range(len(array)):
-#                                 for i in range(len(array)):
-#                                     print(array[m]+array[l]+array[k]+array[j]+array[i])
-#                                     if array[m]+array[l]+array[k]+array[j]+array[i] == password:
-#                                         print(f"Yes! {array[m]+array[l]+array[k]+array[j]+array[i]}")
-#                                         crackedit = True
-#                                         break
-
-
-
-# crackedFun()
 
 def crackedFun():
     for num_dig in range(1, 9):
